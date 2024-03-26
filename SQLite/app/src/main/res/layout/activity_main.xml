@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FBDDC3"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="serif"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:boxStrokeColor="#00B8D4"
+      app:boxStrokeWidth="3dp"
+      app:hintTextColor="#00B8D4"
+      app:hintEnabled="true"
+      >
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="20sp"
+          android:hint="Enter Name"
+          android:textColor="@color/black"
+          />
+  </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#00B8D4"
+        app:boxStrokeWidth="3dp"
+        app:hintTextColor="#00B8D4"
+        app:hintEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:hint="Enter User Name"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#00B8D4"
+        app:boxStrokeWidth="3dp"
+        app:hintTextColor="#00B8D4"
+        app:hintEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:hint="Enter Password"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/insertButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:text="Insert Data"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:text="Update Data"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:text="Delete Data"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/showButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:text="View Data"/>
+    </LinearLayout>
+</LinearLayout>
